@@ -88,4 +88,6 @@
 }
 const array1 = [1, 2, 3];
 const array2 = [4, 5, 6];
-const concatArray = array1.concat(array2); // 기존의 배열은 변하지 않음.
+const concatArray = array1.concat(array2);
+console.log(concatArray);
+// 기존의 배열은 변하지 않음.

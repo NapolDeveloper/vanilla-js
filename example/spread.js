@@ -4,9 +4,7 @@ const dog = {
   name: 'happy'
 };
 
-const animal = {
-  ...dog,
-  function: function sound() {
-    console.log('hello');
-  }
-};
+// spread 문법을 이용하여 배열 합치기
+const animals = ['dog', 'cat', 'pig', 'cow'];
+const animals2 = [...animals, 'chicken'];
+const animals3 = [...animals, 'chicken', ...animals];

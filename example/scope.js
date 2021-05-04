@@ -16,10 +16,10 @@ function otherFunction() {
 // 블록 block-level scope
 function foo() {
   if (true) {
-    const a = 0;
+    const a = 0; // const 대신 let도 가능함
     console.log(a);
   }
-  console.log(a);
+  console.log(a); // if문 안에 선언된 a에 접근하지 못함
 }
 
 // javascript에서는 var를 통해 함수 내에 선언되어있다면 if와 같이 block 밖에서 사용 가능
@@ -27,7 +27,10 @@ function foo() {
 function foo() {
   if (true) {
     var a = 0;
-    console.log(a);
+    let b = 1;
+    const c = 2;
   }
   console.log(a);
+  console.log(b);
+  console.log(c);
 }

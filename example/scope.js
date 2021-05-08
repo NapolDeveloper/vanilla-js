@@ -30,7 +30,7 @@ function foo() {
     let b = 1;
     const c = 2;
   }
-  console.log(a);
-  console.log(b);
-  console.log(c);
+  console.log(a); // 0
+  console.log(b); // b is not defined
+  console.log(c); // c is not defined
 }
